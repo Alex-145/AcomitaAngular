@@ -1,0 +1,19 @@
+export class Menber {
+  id?:number;
+  codemenber?:string;
+  name?:string;
+  fatherlastname?:string;
+  motherlastname?:string;
+  birthdate?:string;
+  dni?:string;
+  celphone?:string;
+  degree?:string;
+  email?:string;
+  civilestatus?:string;
+  address?:string;
+  ruc?:string;
+  ubigeo?:string;
+  menberstatus?:string;
+  docpatrom?:string;
+  user_id?:number;
+}

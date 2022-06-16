@@ -1,0 +1,126 @@
+<div class="card mt-5">
+  <div class="card-body">
+      <h4 class="text-center">Registro de Socios</h4>
+      <form #menberForm="ngForm" (ngSubmit)="submitForm(menberForm)">
+          <input type="hidden" name="id" [(ngModel)]="menberService.selectMenber.id">
+          <div class="form-group mb-3">
+            <label >Codigo de Socio</label>
+            <input type="text" class="form-control" name="codemenber"
+            [(ngModel)]="menberService.selectMenber.codemenber"
+              placeholder="Codemenber">
+          </div>
+
+          <div class="form-group mb-3">
+            <label >Nombres</label>
+            <input type="text" class="form-control" name="name"
+            [(ngModel)]="menberService.selectMenber.name"
+              placeholder="Name">
+          </div>
+
+          <div class="form-group mb-3">
+            <label >Apellido Paterno</label>
+            <input type="text" class="form-control" name="fatherlastname"
+            [(ngModel)]="menberService.selectMenber.fatherlastname"
+              placeholder="Fatherlastname">
+          </div>
+          <div class="form-group mb-3">
+            <label >Apellido Materno</label>
+            <input type="text" class="form-control" name="motherlastname"
+            [(ngModel)]="menberService.selectMenber.motherlastname"
+              placeholder="Motherlastname">
+          </div>
+
+
+          <div class="form-group mb-3">
+            <label >Fecha de Nacimiento</label>
+            <input type="text" class="form-control" name="birthdate"
+            [(ngModel)]="menberService.selectMenber.birthdate"
+              placeholder="Fecha de Nacimiento">
+          </div>
+
+
+          <div class="form-group mb-3">
+            <label >DNI</label>
+            <input type="text" class="form-control" name="dni"
+            [(ngModel)]="menberService.selectMenber.dni"
+              placeholder="DNI">
+          </div>
+          <div class="form-group mb-3">
+            <label >N° Celular</label>
+            <input type="text" class="form-control" name="celphone"
+            [(ngModel)]="menberService.selectMenber.celphone"
+              placeholder="N° Celular">
+          </div>
+          <div class="form-group mb-3">
+            <label >Nivel Academico</label>
+            <input type="text" class="form-control" name="degree"
+            [(ngModel)]="menberService.selectMenber.degree"
+              placeholder="Nivel Academico">
+          </div>
+          <div class="form-group mb-3">
+            <label >Email</label>
+            <input type="text" class="form-control" name="email"
+            [(ngModel)]="menberService.selectMenber.email"
+              placeholder="Email">
+          </div>
+
+          <div class="form-group mb-3">
+            <label >Estado civil</label>
+            <input type="text" class="form-control" name="civilestatus"
+            [(ngModel)]="menberService.selectMenber.civilestatus"
+              placeholder="Etado civil">
+          </div>
+          <div class="form-group mb-3">
+            <label >Direccion</label>
+            <input type="text" class="form-control" name="address"
+            [(ngModel)]="menberService.selectMenber.address"
+              placeholder="Direccion">
+          </div>
+          <div class="form-group mb-3">
+            <label >RUC</label>
+            <input type="text" class="form-control" name="ruc"
+            [(ngModel)]="menberService.selectMenber.ruc"
+              placeholder="RUC">
+          </div>
+          <div class="form-group mb-3">
+            <label >Ubigeo</label>
+            <input type="text" class="form-control" name="ubigeo"
+            [(ngModel)]="menberService.selectMenber.ubigeo"
+              placeholder="Ubigeo">
+          </div>
+          <div class="form-group mb-3">
+            <label >Estado</label>
+            <input type="text" class="form-control" name="menberstatus"
+            [(ngModel)]="menberService.selectMenber.menberstatus"
+              placeholder="Activo">
+          </div>
+          <div class="form-group mb-3">
+            <label >documetoPDF</label>
+            <input type="text" class="form-control" name="docpatrom"
+            [(ngModel)]="menberService.selectMenber.docpatrom"
+              placeholder="documetoPDF">
+          </div>
+
+          <div class="form-group mb-3">
+            <label >Usuario</label>
+            <input type="text" class="form-control" name="user_id"
+            [(ngModel)]="menberService.selectMenber.user_id"
+              placeholder="user">
+          </div>
+
+
+
+          <div class="form-group ">
+            <button class="btn btn-primary me-2" type="submit">
+                <i class="fas fa-plus-circle" ></i> Agregar
+            </button>
+            <button class="btn btn-secondary me-2" type="reset" (click)="resetForm(menberForm)">
+                <i class="fas fa-sync-alt"></i> Resetear
+            </button>
+            <button class="btn btn-secondary" type="button" routerLink="/list-menber">
+              <i class="fas fa-hand-point-left"></i> Cancelar
+          </button>
+          </div>
+        </form>
+  </div>
+</div>
