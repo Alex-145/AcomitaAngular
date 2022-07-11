@@ -11,6 +11,12 @@ import { MenberService } from './services/menber.service';
 import { CreateSonComponent } from './components/create-son/create-son.component';
 import { ListSonComponent } from './components/list-son/list-son.component';
 import { SonService } from './services/son.service';
+import { LoginComponent } from './login/login/login.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { CommonModule } from '@angular/common';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
@@ -18,13 +24,19 @@ import { SonService } from './services/son.service';
     CreateMenberComponent,
     ListMenberComponent,
     CreateSonComponent,
-    ListSonComponent
+    ListSonComponent,
+    LoginComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    CommonModule,
+    BrowserAnimationsModule, // required animations module
+    ToastrModule.forRoot(), // ToastrModule added
+
 
   ],
   providers: [MenberService, SonService],
